@@ -23,8 +23,6 @@ namespace LineComprasionProblem
 
             double lengthOfLine2 = Math.Sqrt(Math.Pow((x2 - 0), 2) + Math.Pow((y2 - 0), 2));
 
-
-            //Console.WriteLine(lengthOfLine1.Equals(lengthOfLine2));
             if (lengthOfLine1.Equals(lengthOfLine2))
             {
                 Console.WriteLine("Both lines are equal");
@@ -33,10 +31,6 @@ namespace LineComprasionProblem
             {
                 Console.WriteLine("Both lines are not equls");
             }
-
-
-
-
 
         }
     }
