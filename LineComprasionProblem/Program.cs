@@ -23,15 +23,20 @@ namespace LineComprasionProblem
 
             double lengthOfLine2 = Math.Sqrt(Math.Pow((x2 - 0), 2) + Math.Pow((y2 - 0), 2));
 
-            if (lengthOfLine1.Equals(lengthOfLine2))
+            int relativeValueOfInstance = lengthOfLine1.CompareTo(lengthOfLine2);
+            
+            if(relativeValueOfInstance == -1)
             {
-                Console.WriteLine("Both lines are equal");
+                Console.WriteLine("Line1 is smaller then Line2 ");
+            }else if(relativeValueOfInstance == 1)
+            {
+                Console.WriteLine("Line1 is greater then Line2 ");
             }
             else
             {
-                Console.WriteLine("Both lines are not equls");
+                Console.WriteLine("both lines are equal");
             }
-
+           
         }
     }
 }
